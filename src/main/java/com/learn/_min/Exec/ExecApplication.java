@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ExecApplication {
 
 	public static void main(String[] args) {
-		BinarySearchImpl binarySearch = new BinarySearchImpl();
+		BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSort());
 		int result = binarySearch.binarySearch(new int[]{1,2,3,4,5},3);
 		System.out.println(result);
 
