@@ -14,6 +14,9 @@ public class ExecApplication {
 
 		ApplicationContext applicationContext =SpringApplication.run(ExecApplication.class, args);
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+		System.out.println(binarySearch);
+		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+		System.out.println(binarySearch1);
 		int result = binarySearch.binarySearch(new int[]{1,2,3,4,5},3);
 		System.out.println(result);
 
