@@ -1,4 +1,4 @@
-package com.learn._min.Exec;
+package com.learn._min.Exec.Basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,7 +1,6 @@
-package com.learn._min.Exec;
+package com.learn._min.Exec.Basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
