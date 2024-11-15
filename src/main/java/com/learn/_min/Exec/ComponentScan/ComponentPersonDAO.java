@@ -1,6 +1,5 @@
 package com.learn._min.Exec.ComponentScan;
 
-import com.learn._min.Exec.Scope.JDBCConnection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -8,13 +7,13 @@ import org.springframework.stereotype.Component;
 
 public class ComponentPersonDAO {
     @Autowired
-    private JDBCConnection jdbcConnection;
+    private ComponentJDBCConnection jdbcConnection;
 
-    public JDBCConnection getJdbcConnection() {
+    public ComponentJDBCConnection getJdbcConnection() {
         return jdbcConnection;
     }
 
-    public void setJdbcConnection(JDBCConnection jdbcConnection) {
+    public void setJdbcConnection(ComponentJDBCConnection jdbcConnection) {
         this.jdbcConnection = jdbcConnection;
     }
 }
