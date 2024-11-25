@@ -14,6 +14,7 @@ public class ExecApplication {
 	private static Logger LOGGER = LoggerFactory.getLogger(ExecApplication.class);
 
 	public static void main(String[] args) {
+
 		//BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSort());
 
 		//Application Context
