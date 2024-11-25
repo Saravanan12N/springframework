@@ -1,6 +1,8 @@
 package com.learn._min.Exec.Basic;
 
 import com.learn._min.Exec.ComponentScan.ComponentPersonDAO;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -37,6 +39,16 @@ public class ComponentScanExecApplication {
 //		System.out.println(result);
 
 		//OUTPUT com.learn._min.Exec.Basic.BubbleSortAlg@15deb1dc
+	}
+
+	@PostConstruct
+	public void postConstruct(){
+		LOGGER.info("postConstruct");
+	}
+
+	@PreDestroy
+	public void preDestory(){
+		LOGGER.info("preDestroy");
 	}
 
 }
