@@ -15,7 +15,6 @@ public class ExecApplication {
 	public static void main(String[] args) {
 
 		//BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSort());
-
 		//Application Context
 
 		ApplicationContext applicationContext =SpringApplication.run(ExecApplication.class, args);
