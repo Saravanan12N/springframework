@@ -1,9 +1,10 @@
 package juint;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import static com.jayway.jsonpath.internal.path.PathCompiler.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -32,5 +33,28 @@ public class MyMathTest {
         assertTrue(test);
     }
 
+    @BeforeAll
+    static void beforeAll(){
+        System.out.println("before Alll");
+    }
 
+    @BeforeEach
+    void beforeEach(){
+        System.out.println("Before Each");
+    }
+
+    @AfterEach
+    void afterEach(){
+        System.out.println("Before Each");
+    }
+
+    @Test
+    void test1(){
+        System.out.println("Test 1");
+    }
+
+    @Test
+    void test2(){
+        System.out.println("Test 2");
+    }
 }
