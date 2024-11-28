@@ -1,8 +1,6 @@
 package juint;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
 import java.util.Arrays;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -56,5 +54,10 @@ public class MyMathTest {
     @Test
     void test2(){
         System.out.println("Test 2");
+    }
+
+    @AfterAll
+    static void afterAll(){
+        System.out.println("After All");
     }
 }
